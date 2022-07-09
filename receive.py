@@ -21,4 +21,4 @@ while len(fetched_data) < 5:
 			moisture_percent = 0
 		fetched_data.append(moisture_percent)
 #		print('Data from pico', str(data_in).replace('\r\n', ''), int(moisture_percent))
-print(json.dumps({'Sampled moisture:':int(sum(fetched_data) / len(fetched_data))}))
+print(json.dumps({'moisture_percent:':int(sum(fetched_data) / len(fetched_data))}))
